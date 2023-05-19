@@ -176,7 +176,7 @@ def worker():
         cou = 1
 
 
-        cursor2 = conn.execute("SELECT id FROM chat_ids")
+        cursor2 = conn2.execute("SELECT id FROM chat_ids")
         user_id2 = [row[0] for row in cursor2.fetchall()]
         for id in user_id2:
             wb = openpyxl.load_workbook("kmb212(1).xlsx")
